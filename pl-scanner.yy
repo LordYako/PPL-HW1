@@ -130,7 +130,7 @@ ALPHAL [a-z]
 									return T_ID;
 							  }
 
-({DIGIT}|"+"|"-")({DIGIT}+)(".")({DIGIT}+)					{ 
+("+"|"-")?({DIGIT}+)(".")({DIGIT}+)					{ 
 										return L_FLOAT; 
                   }
 
